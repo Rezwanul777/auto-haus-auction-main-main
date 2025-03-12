@@ -17,13 +17,13 @@ const CarTest = () => {
   const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false);
   const navigate = useNavigate();
   return (
-    <div className="container mx-auto px-4 space-y-6 relative">
+    <div className="container mx-auto px-4 space-y-7 relative">
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
           <h1 className="text-2xl font-semibold text-white">Fordonstester</h1>
           <Button 
             className="bg-[#D4AF37] hover:bg-[#D4AF37]/90 text-white w-full sm:w-auto"
-            onClick={() => navigate('/car-valuation')}
+            onClick={() =>setIsCreateDialogOpen(true)}
           >
             <Plus className="h-4 w-4 mr-2" />
             Skapa Test
@@ -104,7 +104,7 @@ const CarTest = () => {
       </div>
 
       
-      <TestBackground />
+      {/* <TestBackground /> */}
       <CreateTestDialog
         isOpen={isCreateDialogOpen}
         onOpenChange={setIsCreateDialogOpen}

@@ -15,6 +15,8 @@ import Support from "./pages/Support";
 import Index from "./pages/Index";
 import CarTest from "./pages/CarTest";
 import Favorites from "./pages/Favorites";
+import CreateTestDialog from "./components/modal/CreateTestDialog";
+
 //import CreateAdStepPage from "./components/support/steps/CreateAdStepPage";
 
 export const router = createBrowserRouter([
@@ -46,10 +48,10 @@ export const router = createBrowserRouter([
         path: "car-test",
         element: <CarTest />,
       },
-      // {
-      //   path:"create-ad-steps",
-      //   element: <CreateAdStepPage />
-      // },
+      {
+        path:"create-registration",
+        element: <CreateTestDialog   isOpen={false} onOpenChange={() => {}}/>
+      },
       {
         path: "auctions",
         element: <Auctions />,

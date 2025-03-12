@@ -10,14 +10,14 @@ export default defineConfig(({ mode }) => ({
   
   // Development server configuration
   server: {
-    port: 8080,
+    port: 8000,
     strictPort: true, // Fail if port is in use
     host: true, // Listen on all addresses
   },
   
   // Preview server configuration
   preview: {
-    port: 8080,
+    port: 8000,
     strictPort: true,
     host: true,
   },
