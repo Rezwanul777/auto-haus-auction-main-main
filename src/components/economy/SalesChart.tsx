@@ -26,7 +26,7 @@ export const SalesChart = () => {
   return (
     <Card className="glass-card mb-8 hover-scale">
       <CardHeader>
-        <CardTitle className="text-white">Försäljningsutveckling</CardTitle>
+        <CardTitle className="text-white sm:font-semibold ">Försäljningsutveckling</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="h-[200px] md:h-[300px]">

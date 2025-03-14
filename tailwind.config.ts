@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 
 import type { Config } from "tailwindcss";
 
@@ -16,6 +17,8 @@ export default {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        'xxs': '360px',  // Extremely small screens (iPhone SE, etc)
+        'xs': '480px',
       },
     },
     extend: {
