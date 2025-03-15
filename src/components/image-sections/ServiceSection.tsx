@@ -21,8 +21,8 @@ export const ServiceSection = ({
   return (
     <ImageSection
       title={
-        <div className="flex justify-between items-center w-full">
-          <span>Servicebilder</span>
+        <div className="flex justify-between items-center space-x-4">
+          <span className="text-black font-bold">Servicebilder</span>
           <Button
             variant="outline"
             onClick={onServiceDetailsClick}

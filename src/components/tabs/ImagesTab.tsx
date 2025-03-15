@@ -232,6 +232,7 @@ export const ImagesTab = () => {
   };
 
   return (
+    <div className="no-scrollbar overflow-hidden px-0 sm:px-2 w-full max-w-full">
     <motion.div 
       initial="hidden"
       animate="visible"
@@ -325,8 +326,7 @@ export const ImagesTab = () => {
               title={section.title}
               isOpen={section.isOpen}
               onOpenChange={() => toggleSection(section.id)}
-              onUpload={() => handleImageUpload(section.id)}
-            />
+              onUpload={() => handleImageUpload(section.id)} children={undefined}            />
           ))}
       </motion.div>
 
@@ -350,5 +350,9 @@ export const ImagesTab = () => {
         </Button>
       </motion.div>
     </motion.div>
+    </div>
   );
 };
+
+// Add this CSS to your global style file or component styles
+// to completely hide scrollbars while maintaining scroll functionality
