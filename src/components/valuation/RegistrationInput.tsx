@@ -77,7 +77,7 @@ export const RegistrationInput = ({ onSubmit }: RegistrationInputProps) => {
   };
 
   return (
-    <div className="space-y-4 max-w-full mx-auto">
+    <div className="space-y-4 max-w-md mx-auto">
       <div className="space-y-3">
         <div className="flex flex-col sm:flex-row items-center gap-3 w-full">
           <div className="relative w-full">
@@ -89,8 +89,8 @@ export const RegistrationInput = ({ onSubmit }: RegistrationInputProps) => {
               value={regNumber}
               onChange={(e) => setRegNumber(e.target.value.toUpperCase())}
               placeholder="REG. NR."
-              className="pl-14 text-center uppercase text-[2.5rem] xs:text-[3rem] sm:text-[4rem] md:text-[5.0rem] 
-                         leading-[1.2] xs:leading-[1.2] sm:leading-[1.2] md:leading-[60px] 
+              className="pl-14 text-center uppercase text-[1.5rem] xs:text-[1.5rem] sm:text-[2rem] md:text-[3.0rem] 
+                         leading-[1.2] xs:leading-[1.2] sm:leading-[1.2] md:leading-[50px] 
                          tracking-[0.15em] xs:tracking-[0.2em] 
                          h-[50px] xs:h-[52px] sm:h-[56px] md:h-[60px] 
                          w-full bg-white font-medium 

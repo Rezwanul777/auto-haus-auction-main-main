@@ -40,6 +40,8 @@ export const router = createBrowserRouter([
         path: "auth",
         element: <Auth />,
       },
+     
+      
       {
         path: "car-valuation",
         element: <CarValuation />,

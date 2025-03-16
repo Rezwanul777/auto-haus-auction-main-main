@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { toast } from "sonner";
+import { ChevronDown } from "lucide-react";
 
 interface ServiceDetailsDialogProps {
   isOpen: boolean;
@@ -37,6 +38,9 @@ export const ServiceDetailsDialog = ({ isOpen, onClose }: ServiceDetailsDialogPr
         <DialogHeader>
           <DialogTitle>Lägg till servicedetaljer</DialogTitle>
         </DialogHeader>
+        <div>
+        
+        </div>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
           <div className="space-y-2">
             <Label htmlFor="odometer">Mätarställning (km)</Label>
