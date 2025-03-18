@@ -566,7 +566,7 @@ const NavigationCards = () => {
 
   return (
     <div className="space-y-2">
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-2 mb-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6  gap-2 mb-2">
         {navigationItems.slice(0, 3).map((item, index) => (
           item.path === "/messages" ? (
             <MessageCard key={`nav-${index}`} item={item} />
@@ -576,7 +576,7 @@ const NavigationCards = () => {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-2 mb-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-2 mb-2">
         {navigationItems.slice(3).map((item, index) => (
           <NavigationCard key={`nav-bottom-${index}`} item={item} />
         ))}
