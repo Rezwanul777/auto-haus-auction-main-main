@@ -49,7 +49,7 @@ const upcomingAuctions = [
 const CarouselSection = () => {
   return (
     <section className="py-4 bg-gradient-to-b from-primary/5 to-transparent">
-      <div className="max-w-4xl mx-auto px-2">
+      <div className=" mx-auto px-2">
         <div className="relative bg-black/30 backdrop-blur-sm border border-white/20 rounded-xl p-6 mb-8">
           <div className="absolute -left-4 top-1/2 -translate-y-1/2">
             <Car className="w-8 h-8 text-accent" />
@@ -66,7 +66,7 @@ const CarouselSection = () => {
         </div>
         
         <h2 className="text-lg font-bold text-center mb-4 text-primary">
-          Kommande Auktioner
+          cartestAuktioner
         </h2>
         
         <Carousel
