@@ -25,7 +25,7 @@ const VehicleHeader = ({ make, model, year, images = [] }: VehicleHeaderProps) =
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h1 className="text-4xl font-bold text-white flex items-center gap-3">
+        <h1 className="text-2xl font-bold text-white flex items-center gap-3">
           <Car className="w-8 h-8 text-accent" />
           {make} {model} {year}
         </h1>

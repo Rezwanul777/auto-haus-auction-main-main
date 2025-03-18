@@ -59,6 +59,8 @@
   @apply transition-transform duration-300 hover:scale-[1.01];
 }
 
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -150,6 +152,45 @@ body, #root, .app-container {
 }
 
 
-/*  */
+
+/* dashboard  css*/
 
 
+
+.bidding-info-wrapper {
+  /* This wrapper ensures the container stays within its column */
+  position: relative;
+  height: 100%;
+}
+
+.bidding-info-container {
+  /* For desktop, we use sticky positioning instead of JS-based fixed positioning */
+  position: sticky;
+  top: 16px; 
+  width: 100%;
+  z-index: 40;
+}
+
+/* Add spacing at the bottom for mobile view */
+@media (max-width: 329px) {
+  body {
+    padding-bottom: 300px; /* Adjust based on your card height */
+  }
+  
+  .glass-card.fixed {
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Ensure card is not transparent on very small screens */
+  }
+}
+
+/* Make sure the glass card is not transparent on mobile/tablet */
+@media (max-width: 767px) {
+  .glass-card {
+    background-color: rgba(15, 15, 15, 0.95) !important; /* Darker, less transparent background */
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* Ensure the card doesn't overflow its container */
+.glass-card {
+  max-width: 100%;
+}

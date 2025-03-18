@@ -56,10 +56,10 @@ const CarListing = () => {
           date: "2023-12-01",
           mileage: "45000",
           description: "Årlig service, oljebyte",
-          images: [
-            "https://images.unsplash.com/photo-1487887235947-a955ef187fcc",
-            "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
-          ]
+          // images: [
+          //   "https://images.unsplash.com/photo-1487887235947-a955ef187fcc",
+          //   "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+          // ]
         },
         {
           date: "2022-12-15",
