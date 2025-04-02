@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 // import {
@@ -291,12 +292,14 @@
 // ];
 
 // news from github
+
+
+
 export interface Message {
   sender: string;
   content: string;
   time: string;
 }
-
 export interface NavigationItem {
   title: string;
   subtitle: string;
@@ -306,28 +309,31 @@ export interface NavigationItem {
   width: string;
   animation: string;
   messages?: Message[];
+  isDialog?: boolean;
+ 
 }
-import { 
-  Plus, 
-  ListOrdered, 
-  MessageSquare, 
-  PieChart, 
+import {
+  Plus,
+  ListOrdered,
+  MessageSquare,
+  PieChart,
   Settings,
   Headphones,
   LucideIcon
 } from "lucide-react";
-
-
-
 export const navigationItems: NavigationItem[] = [
+ 
+ 
   {
     title: "Lägg upp annons/Värdera bilen",
     subtitle: "Skapa en ny annons",
-    path: "/car-valuation",
+    path: "/create-test",
     icon: Plus,
     color: "from-[#FF7B7B] to-[#FFB17B]",
     width: "col-span-1 sm:col-span-1 md:col-span-3", // Updated width classes
-    animation: "animate-fade-in"
+    animation: "animate-fade-in",
+    
+   
   },
   {
     title: "Meddelanden",
@@ -386,7 +392,11 @@ export const navigationItems: NavigationItem[] = [
     width: "col-span-1 sm:col-span-3", // Full width on mobile, 3 columns on larger screens
     animation: "animate-fade-in delay-200"
   }
+ 
 ];
+
+
+
 
 //updated
 // export interface Message {

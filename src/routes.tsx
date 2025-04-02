@@ -16,6 +16,8 @@ import Index from "./pages/Index";
 import CarTest from "./pages/CarTest";
 import Favorites from "./pages/Favorites";
 import CreateTestDialog from "./components/modal/CreateTestDialog";
+import CreateTest from "./components/dashboard/createTest";
+
 
 //import CreateAdStepPage from "./components/support/steps/CreateAdStepPage";
 
@@ -53,6 +55,10 @@ export const router = createBrowserRouter([
       {
         path:"create-registration",
         element: <CreateTestDialog   isOpen={false} onOpenChange={() => {}}/>
+      },
+      {
+        path:"create-test",
+        element:<CreateTest />
       },
       {
         path: "auctions",
